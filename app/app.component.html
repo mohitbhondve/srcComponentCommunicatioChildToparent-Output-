@@ -1,0 +1,15 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Child to parent communication
+  </h1>
+  <!--
+    Bind the event with the container
+  -->
+  <app-subcomponent (MyEvent)="Message=$event" (UserName)="Name=$event"></app-subcomponent>
+
+  <!-- Display the message received from child-->
+  <h2>{{Message}}</h2>  
+
+  <h3>{{Name}}</h3>
+</div>
